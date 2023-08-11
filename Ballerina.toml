@@ -3,3 +3,10 @@ org = "zerohack"
 name = "color"
 version = "0.1.0"
 distribution = "2201.7.1"
+authors = ["yuya-morimoto"]
+keywords = ["color", "rgb"]
+repository = "https://github.com/zero-hack-org/module-zerohack-github"
+license = ["Apache-2.0"]
+
+[build-options]
+observabilityIncluded=true
