@@ -1,12 +1,23 @@
+# RGB color class
+# Red, Green, Blue, and HexColorCode
 
+# + red - red color code(0-255)
+# + green - green color code(0-255)
+# + blue - blue color code(0-255)
+# + hex - Hex color code(#RRGGBB)
 public class Rgb {
     private final int:Unsigned8 red;
     private final int:Unsigned8 green;
     private final int:Unsigned8 blue;
     private final string hex;
 
+    # Constructor
+    #
+    # + colorCode - [red, green, blue]|#RRGGBB
+    # + return - error?
     public function init([int:Unsigned8, int:Unsigned8, int:Unsigned8]|string colorCode) returns error? {
         if colorCode is [int:Unsigned8, int:Unsigned8, int:Unsigned8] {
+
             self.red = colorCode[0];
             self.green = colorCode[1];
             self.blue = colorCode[2];
